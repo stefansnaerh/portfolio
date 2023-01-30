@@ -1,0 +1,22 @@
+@import '../../styles/variables.module.scss';
+
+
+
+.header {
+    border-bottom: 3px solid #8f8f8f;
+    .nav {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        .navUl {
+            display: flex;
+            gap: 2.5rem;
+            color: #DFDFDF;
+            font-size: $fontSize16px;
+            list-style: none;
+            font-family: $mainFont;
+            padding: 0;
+            color: $fontColor;
+        }
+    }
+}
