@@ -1,0 +1,26 @@
+
+@import '../../styles/variables.module.scss';
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .headline {
+        font-size: $fontSize24px;
+        font-weight: $FWsemiBold;
+        margin-bottom: 0;
+    }
+    .line {
+        height: 3px;
+        width: 182px;
+        background-color: #d9d9d9;
+        margin-bottom: 3px;
+    }
+    .text {
+        font-size: $fontSize18px;
+        width: clamp(20rem, 80%, 35rem);
+        margin-bottom: 0;
+    }
+}

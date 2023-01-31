@@ -1,0 +1,26 @@
+@import '../../styles/variables.module.scss';
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    .text {
+        margin-bottom: 0rem;
+        font-size: $fontSize18px;
+        font-weight: $FWsemiBold;
+        text-align: center;
+        width: clamp(20rem, 90%, 35rem);
+    }
+    .techContainer {
+        width: clamp(20rem, 90%, 40rem);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}

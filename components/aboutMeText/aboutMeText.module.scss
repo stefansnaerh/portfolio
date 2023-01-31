@@ -3,6 +3,7 @@
 
 
 .about {
-    font-size: $fontSize16px;
-    font-weight: $FWthin;
+    font-size: $fontSize18px;
+    font-weight: $FWregular;
+    width: clamp(20rem, 95%, 35rem);
 }

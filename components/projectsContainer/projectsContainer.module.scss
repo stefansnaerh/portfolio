@@ -1,16 +1,15 @@
 @import '../../styles/variables.module.scss';
 
-
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
     .headlineContainer {
+        margin-bottom: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 1rem;
         .aboutMe {
             font-size: $fontSize28px;
             font-weight: $FWregular;
@@ -18,7 +17,7 @@
         }
         .line {
             height: 8px;
-            width: 119px;
+            width: 270px;
             background: linear-gradient(90deg, #5E649B -0.03%, #FF3333 99.97%);
             border-radius: 5px;
         }

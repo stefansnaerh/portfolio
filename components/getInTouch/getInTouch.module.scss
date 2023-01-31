@@ -1,30 +1,31 @@
 @import '../../styles/variables.module.scss';
 
 
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
     .headlineContainer {
+        margin-bottom: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 1rem;
-        .aboutMe {
-            font-size: $fontSize28px;
+        .getInTouch {
+            font-size: $fontSize24px;
             font-weight: $FWregular;
             margin-bottom: 2px;
         }
         .line {
             height: 8px;
-            width: 119px;
+            width: 132px;
             background: linear-gradient(90deg, #5E649B -0.03%, #FF3333 99.97%);
             border-radius: 5px;
         }
-        
     }
-    .headshotMobile {
-        border-radius: 5px;
+    .text {
+        font-size: $fontSize16px;
+        width: clamp(20rem, 80%, 35rem);
+        text-align: center;
     }
 }
