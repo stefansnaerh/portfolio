@@ -1,0 +1,74 @@
+@import './variables.module.scss';
+
+
+.container{
+    .section {
+        font-family: $mainFont;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 22rem;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        align-items: center;
+        .linearLine {
+            width: 70vw;
+            max-width: 1300px;
+            height: 3px;
+            background: linear-gradient(90deg, #5E649B -0.03%, #FF3333 99.97%);
+            border-radius: 5px;
+        }
+        .headlineContainer {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .headline {
+                font-size: $fontSize26px;
+                font-weight: $FWsemiBold;
+                margin-bottom: 2px;
+            }
+            .line {
+                height: 8px;
+                width: 292px;
+                background: linear-gradient(90deg, #5E649B -0.03%, #FF3333 99.97%);
+                border-radius: 5px;
+            }   
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            .footerText {
+                font-size: $fontSize16px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 1300px){
+    .container {
+         .section {
+        top: 26rem;
+        .aboutAndTech {
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+        }
+        .headlineContainer {
+            .headline {
+                font-size: $fontSize34px;
+                font-weight: $FWsemiBold;
+                margin-bottom: 2px;
+            }
+            .line {
+                width: 39rem;
+            }
+    }
+}
+}
+}

@@ -6,25 +6,70 @@
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+   
     .headlineContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 1rem;
         .aboutMe {
-            font-size: $fontSize28px;
-            font-weight: $FWregular;
+            font-size: $fontSize26px;
+            font-weight: $FWsemiBold;
             margin-bottom: 2px;
         }
         .line {
             height: 8px;
-            width: 119px;
+            width: 136px;
             background: linear-gradient(90deg, #5E649B -0.03%, #FF3333 99.97%);
             border-radius: 5px;
         }
-        
     }
     .headshotMobile {
         border-radius: 5px;
     }
+    .textImageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+@media only screen and (min-width: 780px){
+    .container {
+        gap: 5rem;
+        .headlineContainer { 
+        .aboutMe {
+            font-size: $fontSize30px;
+        }
+        .line {
+            width: 158px;
+        }
+    }
+        .textImageContainer {
+            flex-direction: row;
+            justify-content: center;
+            gap: 5rem;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1300px){
+    .container {
+        .textImageContainer {
+            .headshotMobile {
+                height: 250px;
+                width: 250px;
+            }
+        }
+        .headlineContainer { 
+        .aboutMe {
+            font-size: $fontSize34px;
+        }
+        .line {
+            width: 172px;
+        }
+    }
+}
 }

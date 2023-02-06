@@ -7,6 +7,12 @@
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    margin-top: 2rem;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInTop;
     .text {
         margin-bottom: 0rem;
         font-size: $fontSize18px;
@@ -15,12 +21,34 @@
         width: clamp(20rem, 90%, 35rem);
     }
     .techContainer {
-        width: clamp(20rem, 90%, 40rem);
+        width: clamp(20rem, 90%, 50rem);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 2rem;
     }
+}
 
+@media only screen and (min-width: 780px){
+    .container {
+        gap: 3.5rem;
+        .techContainer {
+            gap: 3rem;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1300px) {
+    .container {
+        gap: 4rem;
+        .techContainer{
+            gap: 4rem;
+        }
+        .text {
+            font-size: $fontSize20px;
+            width: 45rem;
+        }
+    }
 }

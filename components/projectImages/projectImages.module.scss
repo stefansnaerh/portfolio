@@ -24,3 +24,43 @@
         width: 220px;
     }
 }
+@media only screen and (min-width: 890px){
+    .container {
+        height: 340px;
+        width: 340px;
+        .mobile {
+            height: 170px;
+            width: 80px;
+        }
+        .ipad {
+            height: 170px;
+            width: 180px;
+        }
+        .desktop {
+            height: 140px;
+            width: 270px;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1300px) {
+    .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        height: 380px;
+        width: 380px;
+        .mobile {
+            height: 190px;
+            width: 88x;
+        }
+        .ipad {
+            height: 190px;
+            width: 196px;
+        }
+        .desktop {
+            height: 170px;
+            width: 329px;
+        }
+    }
+}

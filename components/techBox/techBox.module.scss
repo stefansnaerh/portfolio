@@ -19,5 +19,16 @@
     .techName {
         font-size: $fontSize14px;
         margin-bottom: 0;
+        font-weight: $FWsemiBold;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .box {
+        width: 140px;
+        height: 128px;
+        .techName {
+            font-size: $fontSize16px;
+        }
     }
 }

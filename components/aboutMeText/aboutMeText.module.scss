@@ -3,7 +3,22 @@
 
 
 .about {
+    margin-top: 0;
     font-size: $fontSize18px;
     font-weight: $FWregular;
-    width: clamp(20rem, 95%, 35rem);
+    width: clamp(20rem, 95%, 30rem);
+}
+
+@media only screen and (min-width: 780px) {
+    .about {
+        width: clamp(20rem, 95%, 35rem);
+    }
+}
+
+
+@media only screen and (min-width: 1300px){
+    .about {
+        font-size: $fontSize20px;
+        width: 47rem;
+    }
 }

@@ -13,6 +13,8 @@ export default function AboutMeContainer () {
             <h2 className={styles.aboutMe}>About Me</h2>
             <div className={styles.line}></div>
             </div>
+            <div className={styles.textImageContainer}>
+            <AboutMeText/>
             <Image
             src={headshotMobile}
             alt="photo of Stefán"
@@ -20,7 +22,7 @@ export default function AboutMeContainer () {
             height={200}
             className={styles.headshotMobile}
             />
-            <AboutMeText/>
+            </div>
         </div>
     )
 }

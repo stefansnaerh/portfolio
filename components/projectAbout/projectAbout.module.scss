@@ -9,18 +9,37 @@
     align-items: center;
     .headline {
         font-size: $fontSize24px;
-        font-weight: $FWsemiBold;
+        font-weight: $FWregular;
+        margin-top: 0;
         margin-bottom: 0;
     }
     .line {
-        height: 3px;
-        width: 182px;
-        background-color: #d9d9d9;
-        margin-bottom: 3px;
+        border-bottom: 3px solid;
     }
     .text {
         font-size: $fontSize18px;
-        width: clamp(20rem, 80%, 35rem);
-        margin-bottom: 0;
+        width: clamp(20rem, 80%, 30rem);
     }
+}
+
+@media only screen and (min-width: 780px){
+    .container {
+        align-items: flex-start;
+        .text {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .container {
+        
+        .headline {
+            font-size: $fontSize26px;
+        }
+        .text {
+            font-size: $fontSize20px;
+            margin-bottom: 2rem;
+        }
+    } 
 }

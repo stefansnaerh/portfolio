@@ -1,8 +1,40 @@
 
-
-
 .container {
+    padding-top: 65px;
     display: flex;
     justify-content: space-between ;
     margin: 5px 5px 0px 5px  ;
+}
+
+@media only screen and (max-width: 780px){
+    .ipad {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1300px){
+    .ipad {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .desktop {
+        display: none;
+    }
+}
+@media only screen and (min-width: 780px){
+   .container {
+        padding-top: 95px;
+        margin: 1rem 1.6rem 0rem 1.6rem  ;
+        .mobile {
+            display: none;
+        }
+   }
+}
+
+@media only screen and (min-width: 780px){
+    .container {
+        padding-top: 95px;
+        margin: 3.5rem 5rem 0rem 5rem  ;
+   }
 }

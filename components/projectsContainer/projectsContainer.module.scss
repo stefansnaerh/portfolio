@@ -1,29 +1,70 @@
 @import '../../styles/variables.module.scss';
 
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
-    .headlineContainer {
-        margin-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .aboutMe {
-            font-size: $fontSize28px;
-            font-weight: $FWregular;
-            margin-bottom: 2px;
+    gap: 5rem;
+    .aboutLinksContainer {
+        .linksContainer {
+            margin-top: 2rem;
         }
-        .line {
-            height: 8px;
-            width: 270px;
-            background: linear-gradient(90deg, #5E649B -0.03%, #FF3333 99.97%);
-            border-radius: 5px;
+    }
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    .aboutLinksContainer {
+        .linksContainer {
+            margin-top: 2rem;
         }
-        
     }
-    .headshotMobile {
-        border-radius: 5px;
+}
+
+@media only screen and (min-width: 780px){
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        .aboutLinksContainer {
+            display: flex;
+            flex-direction: column;
+            width: 34rem;
+            .linksContainer {
+                align-self: flex-start;
+            } 
+        }
+    } 
+    .container2 {
+        flex-direction: row-reverse;
+        justify-content: center;
+        .aboutLinksContainer {
+            display: flex;
+            flex-direction: column;
+            width: 34rem;
+            .linksContainer {
+                align-self: flex-start;
+            } 
+        }
     }
+    
+}
+
+@media only screen and (min-width: 1300px){
+    .container {
+        gap: 8rem;
+        .aboutLinksContainer {
+            width: 36rem;
+        }
+    } 
+    .container2 {
+        gap: 8rem;
+        .aboutLinksContainer {
+            width: 36rem;
+
+        }
+    }
+    
 }
