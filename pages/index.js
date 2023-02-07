@@ -11,6 +11,7 @@ import pmmIpad from '../public/projectImages/pmmIpad.jpeg'
 import pmmDesktop from '../public/projectImages/pmmDesktop.jpeg'
 
 // components
+import Head from 'next/head'
 import Navbar from '../components/navbar/navbar'
 import Frames from '../components/frames/frames'
 import MyName from '../components/myName/myName'
@@ -43,6 +44,13 @@ export default function Home() {
 
  
   return (
+    <>
+    <Head>
+    <title>Stefán Snær Portfolio</title>
+        <meta property="og:title" content="Stefán Snær Portfolio" key="title" />
+        <meta name="description" content="Portfolio for Stefán Snær Heimisson"></meta>
+        <meta name="author" content="Stefán Snær"></meta>
+    </Head>
     <div ref={homeRef} className={styles.container}>
       <Navbar 
       handleScrollHome={handleScrollHome}
@@ -101,5 +109,6 @@ export default function Home() {
       </footer>
       </section>
     </div>
+    </>
   )
 }
