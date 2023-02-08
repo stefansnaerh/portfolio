@@ -19,7 +19,7 @@ export default function SocialLinks () {
                 alt="linked profile"
             />
             </a>
-            <a>
+            <a href='https://github.com/stefansnaerh'>
                 <Image
                 src={githubIcon}
                 alt="github profile"
