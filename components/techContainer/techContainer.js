@@ -18,7 +18,7 @@ import nextJsIcon from '../../public/icons/nextjsIcon.svg'
 export default function ComfortableTech () {
     return (
         <div className={styles.container}>
-        <p className={styles.text}>{"Technologies I'm most comfortable with:"}</p>
+        <p className={styles.text}>{"Technologies I'm comfortable with:"}</p>
         <div className={styles.techContainer}>
         <TechBox
         techLogo={jsIcon}
