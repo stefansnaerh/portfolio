@@ -1,77 +1,75 @@
-@import '../../styles/variables.module.scss';
-
-
-
+@import "../../styles/variables.module.scss";
 
 .container {
-    margin-top: 10rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  animation-duration: 2.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInTop;
+  .headlineContainer {
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
-    animation-duration: 2.8s;
-    animation-timing-function: ease-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-name: slideInTop;
-    .headlineContainer {
-        margin-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .getInTouch {
-            font-size: $fontSize26px;
-            font-weight: $FWsemiBold;
-            margin-bottom: 2px;
-        }
-        .line {
-            height: 8px;
-            width: 168px;
-            background: linear-gradient(90deg, #5E649B -0.03%, #FF3333 99.97%);
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
+    .getInTouch {
+      font-size: $fontSize26px;
+      font-weight: $FWsemiBold;
+      margin-bottom: 2px;
     }
-    .text {
-        font-size: $fontSize18px;
-        width: clamp(20rem, 80%, 35rem);
-        text-align: center;
-        margin: 0;
+    .line {
+      height: 8px;
+      width: 168px;
+      background: linear-gradient(90deg, #5e649b -0.03%, #ff3333 99.97%);
+      border-radius: 5px;
+      cursor: pointer;
     }
-    .emailLink {
-        font-size: $fontSize18px;
-        font-family: $mainFont;
-        font-style: normal;
-        font-weight: $FWsemiBold;
-    }
-    .redLine {
-        padding: 6px 10px 6px 10px;
-        border-bottom: 5px solid $softRed;
-        border-radius: 4px;
-    }
-    .redLine:hover {
-        background-color: $softRed;
-    }
+  }
+  .text {
+    font-size: $fontSize18px;
+    width: clamp(20rem, 80%, 35rem);
+    text-align: center;
+    margin: 0;
+  }
+  .emailLink {
+    font-size: $fontSize18px;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: $FWsemiBold;
+  }
+  .redLine {
+    padding: 6px 10px 6px 10px;
+    border-bottom: 5px solid $softRed;
+    border-radius: 4px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .redLine:hover {
+    background-color: $softRed;
+  }
 }
 
-
-
 @media only screen and (min-width: 1300px) {
-    .container {
-        .headlineContainer {
-           .getInTouch {
-                font-size: $fontSize34px ;
-           }
-           .line {
-            width: 22rem;
-           }
-        }
-        .text {
-            font-size: $fontSize20px;
-        }
-        .emailLink {
-            font-size: $fontSize20px;
-        }
+  .container {
+    .headlineContainer {
+      .getInTouch {
+        font-size: $fontSize34px;
+      }
+      .line {
+        width: 22rem;
+      }
     }
+    .text {
+      font-size: $fontSize20px;
+    }
+    .emailLink {
+      font-size: $fontSize20px;
+    }
+  }
 }

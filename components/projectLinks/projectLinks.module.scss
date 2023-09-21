@@ -1,42 +1,42 @@
-@import '../../styles/variables.module.scss';
-
-
-
+@import "../../styles/variables.module.scss";
 
 .container {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    justify-content: center;
-    .text {
-        font-size: $fontSize16px;
-        font-weight: $FWsemiBold;
-        margin: 0;
-    }
-    .line {
-        padding: 6px 10px 6px 10px;
-        border-bottom: 5px solid $softRed;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .line:hover {
-        background-color: $softRed;
-    }
-
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  .text {
+    font-size: $fontSize16px;
+    font-weight: $FWsemiBold;
+    margin: 0;
+  }
+  .line {
+    padding: 6px 10px 6px 10px;
+    border-bottom: 5px solid $softRed;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line:hover {
+    background-color: $softRed;
+  }
 }
 
-@media only screen and (min-width: 380px){
-    .container {
-        .text {
-           font-size: $fontSize18px;
-        }
+@media only screen and (min-width: 380px) {
+  .container {
+    .text {
+      font-size: $fontSize18px;
     }
+  }
 }
 
 @media only screen and (min-width: 1300px) {
-    .container {
-        .text {
-            font-size: $fontSize20px;
-        }
+  .container {
+    .text {
+      font-size: $fontSize20px;
     }
+  }
 }
